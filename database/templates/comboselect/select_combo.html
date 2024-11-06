@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -228,8 +227,11 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12" style="align-items: center; display: flex;">
                 <div class="note-color" style="width:100%">
-                    <div class="note-col" style="width:100%"><a onclick="nextStep('/dat-ve-confirm.html')" style="border-radius: 0; padding: 13px; background: #f37737; border-color: yellow; width: 70%;color:#fff" class="btn btn-success">Tiếp theo</a></div>
+                    <div class="note-col" style="width:100%">
+                       <a onclick="nextStep('{% url 'check_out' %}')" class="btn btn-success">Tiếp theo</a>
+         </div>
                 </div>
+                
             
                 <div class="clearfix"></div>
             </div>

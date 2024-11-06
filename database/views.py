@@ -468,23 +468,25 @@ def select_combo(request):
     combos = Combo.objects.all()
     # Trả về template cùng với dữ liệu combo
     return render(request, 'comboselect/select_combo.html', {'combos': combos})
-from .models import NguoiDung, Ve, Combo
+
+#CHECKOUT
 from django.shortcuts import render
-
-# View for ticket confirmation page
-def confirm_ticket(request, ticket_id):
-    # Get ticket, user, and combo information
-    ve = get_object_or_404(Ve, id=ticket_id)
-    user = ve.user_mua_ve
-    combo = ve.combo
-
-    # Data to pass to the template
-    context = {
-        'user': user,
-        've': ve,
-        'combo': combo,
+def check_out(request):
+    # Ticket information
+    ticket_info = {
+        'name': 'Thái Tuấn Tài',
+        'email': 'tuantai2k3bmt@gmail.com',
+        'phone': '0856232252',
+        'cinema': 'STARLIGHT BUÔN MA THUỘT',
+        'room': '05',
+        'movie_name': 'CÔ DÂU HÀO MÔN (T18)',
+        'time': '20:30 - 06/11/2024',
+        'seat': 'D06',
+        'ticket_price': 50000,
+        'total_price': 50000,
     }
-    return render(request, 'checkout/dat-ve-confirm.html', context)
+    return render(request, 'checkout/check_out.html', {'ticket_info': ticket_info})
+
 
 from .models import BinhLuan
 from .forms import BinhLuanForm

@@ -25,6 +25,7 @@ urlpatterns = [
     path('phim/them/', views.them_phim, name='them_phim'),
     path('phim/sua/<int:id>/', views.sua_phim, name='sua_phim'),
     path('phim/xoa/<int:id>/', views.xoa_phim, name='xoa_phim'),
+    path('checkout/', views.check_out, name='check_out'),
 
     # Đường dẫn cho quản lý người dùng
     path('nguoidung/', views.danh_sach_nguoi_dung, name='danh_sach_nguoi_dung'),

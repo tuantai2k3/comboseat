@@ -111,6 +111,45 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ /* Add this to your CSS file */
+.main-content {
+    color: #ffffff; /* Use a bright color for text */
+    padding: 20px;
+}
+
+.main-content h2, .main-content h3 {
+    color: #f37737; /* Bright color for headings */
+}
+
+.ticket-info {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.ticket-info p {
+    color: #d3d3d3; /* Light gray color for paragraphs */
+    margin: 10px 0;
+}
+
+.ticket-info input[type="radio"] + label {
+    color: #d3d3d3; /* Light gray color for labels */
+    margin-left: 5px;
+}
+
+.ticket-info button[type="submit"] {
+    background-color: #f37737;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ticket-info button[type="submit"]:hover {
+    background-color: #e66a29; /* Slightly darker on hover */
+}
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -169,7 +208,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1rem;
+    font-size: 10px;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
@@ -14063,7 +14102,7 @@ This files contents are outlined below >>>>
 body {
     color: #4a4d58;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 22px;
     max-width: 95%;
