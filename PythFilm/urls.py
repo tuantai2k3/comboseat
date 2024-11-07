@@ -101,4 +101,7 @@ urlpatterns = [
 
     #tai
     path('comboselect/', views.select_combo, name='select_combo'),
+    
+    #seat quan
+    path('seats/', views.seat_selection, name='seat_selection'),
 ]

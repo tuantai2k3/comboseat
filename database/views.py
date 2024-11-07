@@ -558,3 +558,12 @@ def user_login(request):
         else:
             messages.error(request, 'Tài khoản hoặc mật khẩu không đúng')
     return render(request, 'user/login.html')
+
+#Seat
+from django.shortcuts import render
+from .models import GheNgoi
+
+def seat_selection(request):
+    # Fetch seat data from the database
+    seats = GheNgoi.objects.all()
+    return render(request, 'seats/seat.html', {'seats': seats})
